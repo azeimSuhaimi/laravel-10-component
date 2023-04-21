@@ -1,0 +1,17 @@
+
+
+put this in table password_reset_tokens
+
+$table->bigInteger('token_expired');
+
+edit email env port all
+
+
+put this at model users 
+
+    protected $table = 'users';
+    protected $primaryKey = 'email';
+    protected $keyType = 'string';
+    public $timestamps = true;
+
+    make id is primary key
